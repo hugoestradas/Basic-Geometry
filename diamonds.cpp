@@ -4,28 +4,33 @@ using namespace std;
 
 int main(){
     
-        int n, c, k, space=1;
-        cout<<"\nGive me a number to start: ";
-        cin>>n;
-        space=n-1;
+    int number, counter, aux, space=1;
+    
+    cout<<"\nGive me a number to start: ";
+    cin>>number;
+    
+    space=number-1;
         
-        for (k=1; k<=n; k++){
-                for (c=1; c<=space; c++)
-                        cout<<" ";
-                space--;
+    for (aux=1; aux<=number; aux++){
+        for (counter=1; counter<=space; counter++)
+            cout<<" ";
+        space--;
 
-                for (c=1; c<= 2*k-1; c++)
-                        cout<<"*";
-                cout<<"\n";
-        }
-        space =1;
-        for (k=1; k<= n-1; k++){
-            for(c=1; c<= space; c++)
-                cout<<" ";
-            space++;
-            for(c=1; c<=2*(n-k)-1; c++)
-                cout<<"*";
-            cout<<"\n";
-        }
+        for (counter=1; counter<= 2*aux-1; counter++)
+            cout<<"*";
+        
+        cout<<"\n";
+    }
+    
+    space=1;
+    
+    for (aux=1; aux<= number-1; aux++){
+        for(counter=1; counter<= space; counter++)
+            cout<<" ";
+        space++;
+        for(counter=1; counter<=2*(number-aux)-1; counter++)
+            cout<<"*";
+        cout<<"\n";
+    }
     return 0;
 }
