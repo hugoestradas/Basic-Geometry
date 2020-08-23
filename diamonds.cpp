@@ -3,10 +3,12 @@
 using namespace std;
 
 int main(){
+    
         int n, c, k, space=1;
         cout<<"\nGive me a number to start: ";
         cin>>n;
         space=n-1;
+        
         for (k=1; k<=n; k++){
                 for (c=1; c<=space; c++)
                         cout<<" ";
@@ -16,15 +18,14 @@ int main(){
                         cout<<"*";
                 cout<<"\n";
         }
-                        space =1;
-                        for (k=1; k<= n-1; k++){
-                                for(c=1; c<= space; c++)
-                                        cout<<" ";
-                                space++;
-                                for(c=1; c<=2*(n-k)-1; c++)
-                                        cout<<"*";
-
-                                cout<<"\n";
-                        }
-                                return 0;
+        space =1;
+        for (k=1; k<= n-1; k++){
+            for(c=1; c<= space; c++)
+                cout<<" ";
+            space++;
+            for(c=1; c<=2*(n-k)-1; c++)
+                cout<<"*";
+            cout<<"\n";
+        }
+    return 0;
 }
