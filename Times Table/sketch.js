@@ -3,12 +3,12 @@ let factor = 0;
 
 function setup(){
     createCanvas(windowWidth, windowHeight);
-    ratio = height / 2 - 32;
+    ratio = height/2-32;
 }
 
 function getVector(index, total){
     const angle = map(index % total, 0, total, 0, TWO_PI);
-    const v = p5.Vector.fromAngle(angle + PI);
+    const v = p5.Vector.fromAngle(angle+PI);
     vect.mult(ratio);
     return vect;
 }
