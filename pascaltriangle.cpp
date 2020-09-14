@@ -13,6 +13,7 @@ long fact(int x){
  
 int main(){
     int i,j,k,n;
+ 
     cout<<"How many lines? ";
     cin>>n;
     for(i=0;i<n;++i){
