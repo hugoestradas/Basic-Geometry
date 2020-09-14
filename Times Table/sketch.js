@@ -9,8 +9,8 @@ function setup(){
 function getVector(index, total){
     const angle = map(index % total, 0, total, 0, TWO_PI);
     const v = p5.Vector.fromAngle(angle + PI);
-    v.mult(ratio);
-    return v;
+    vect.mult(ratio);
+    return vect;
 }
 
 function draw(){
