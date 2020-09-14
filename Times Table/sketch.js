@@ -18,16 +18,16 @@ function draw(){
     const total = 200;
     factor += 0.020;
 
-    translate(width/2, height/2);
+    translate(width/2 , height/2);
     stroke(255, 150);
     noFill();
-    ellipse(0, 0, ratio*2);
+    ellipse(0, 0, ratio * 2);
 
     strokeWeight(2);
 
     for(let i=0; i<total; i++){
         const a = getVector(i, total);
-        const b = getVector(i*factor, total);
+        const b = getVector(i * factor, total);
         line(a.x, a.y, b.x, b.y);
     }
 
