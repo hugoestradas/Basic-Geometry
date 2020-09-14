@@ -27,7 +27,7 @@ function draw(){
 
     for(let i=0; i<total; i++){
         const a = getVector(i, total);
-        const b = getVector(i * factor, total);
+        const b = getVector(i*factor, total);
         line(a.x, a.y, b.x, b.y);
     }
 
