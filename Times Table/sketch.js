@@ -19,8 +19,11 @@ function draw(){
     factor += 0.015;
 
     translate(width/2 , height/2);
+    
     stroke(255, 150);
+    
     noFill();
+    
     ellipse(0, 0, ratio*2);
 
     strokeWeight(2);
